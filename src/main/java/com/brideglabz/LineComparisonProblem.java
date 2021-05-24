@@ -16,6 +16,27 @@ public class LineComparisonProblem {
            int y2 = sc.nextInt();
 
            double distanceLine1= Math.sqrt(Math.pow(x2-x1,2) + Math.pow(y2-y1,2));
-           System.out.println("length of Line1= "+ distanceLine1);
+
+           System.out.println("Enter the values of next co-ordinates ");
+           System.out.println("x3= ");
+            int x3 = sc.nextInt();
+            System.out.println("y3= ");
+            int y3 = sc.nextInt();
+            System.out.println("x4= ");
+            int x4 = sc.nextInt();
+            System.out.println("y4= ");
+            int y4 = sc.nextInt();
+
+            double distanceLine2=Math.sqrt(Math.pow(x4-x3,2) + Math.pow(y4-y3,2));
+
+            System.out.println("length of Line1= "+ distanceLine1);
+           System.out.println("length of Line2= "+ distanceLine2);
+
+           if (distanceLine1==distanceLine2) {
+               System.out.println("Two Lines are Equal");
+           } else {
+               System.out.println("Two Lines are Not Equal");
+           }
       }
+
 }
